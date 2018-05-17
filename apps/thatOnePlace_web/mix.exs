@@ -44,7 +44,8 @@ defmodule ThatOnePlaceWeb.Mixfile do
       {:thatOnePlace, in_umbrella: true},
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 1.0"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      {:guardian, "~> 1.0"}
     ]
   end
 

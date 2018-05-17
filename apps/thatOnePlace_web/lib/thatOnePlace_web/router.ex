@@ -3,7 +3,10 @@ defmodule ThatOnePlaceWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug ThatOnePlaceWeb.AuthAccessPipeline
   end
+
+  # Lucas Zhou got a 4
 
   scope "/api", ThatOnePlaceWeb do
     pipe_through :api

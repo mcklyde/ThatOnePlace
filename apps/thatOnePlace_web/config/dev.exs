@@ -14,6 +14,9 @@ config :thatOnePlace_web, ThatOnePlaceWeb.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
                     cd: Path.expand("../assets", __DIR__)]]
 
+config :thatOnePlace_web, ThatOnePlaceWeb.UserAuth,
+  issuer: "ThatOnePlace",
+  secret_key: "IM27bUPMztsqzh8xN8WDQbK1b+iQvjbi5RlbxKdtlBBjMn3KE0DTWrNw0Xanet8p"
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed
@@ -29,5 +32,3 @@ config :thatOnePlace_web, ThatOnePlaceWeb.Endpoint,
 # If desired, both `http:` and `https:` keys can be
 # configured to run both http and https servers on
 # different ports.
-
-
