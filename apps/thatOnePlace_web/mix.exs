@@ -45,7 +45,8 @@ defmodule ThatOnePlaceWeb.Mixfile do
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 1.0"},
       {:poison, "~> 3.1"},
-      {:guardian, "~> 1.0"}
+      {:guardian, "~> 1.0"},
+      {:distillery, "~> 1.5", runtime: false}
     ]
   end
 

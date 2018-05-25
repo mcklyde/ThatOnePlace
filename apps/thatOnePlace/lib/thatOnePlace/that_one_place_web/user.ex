@@ -5,7 +5,7 @@ defmodule ThatOnePlace.ThatOnePlaceWeb.User do
 
   schema "devices" do
     field :deviceIdentifier, Ecto.UUID
-    field :lastRequest, :time
+    field :lastRequest, :utc_datetime
 
     timestamps()
   end
